@@ -8,7 +8,7 @@ import axios from "axios"
     const [bookData,setBookData] = useState(Object)
     const [bookImageData,setBookImageData] = useState("")
     const URLbooksingle =  `https://openlibrary.org/works/${bookSingle}.json`
-    console.log(bookSingle);
+   
     
 
     
