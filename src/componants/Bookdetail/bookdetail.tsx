@@ -8,12 +8,12 @@ import axios from "axios"
     const [bookData,setBookData] = useState(Object)
     const [bookImageData,setBookImageData] = useState("")
     const URLbooksingle =  `https://openlibrary.org/works/${bookSingle}.json`
-   
+
     
 
     
     
-    const callData = async (bookSingle:any) => {
+    const callData = async () => {
     try {
       const response = await axios.get(URLbooksingle);
       
@@ -40,7 +40,7 @@ import axios from "axios"
     }
   };
     useEffect(() => {
-    if (bookSingle) callData(bookSingle);
+    if (bookSingle) callData();
   }, [bookSingle]); 
    
   

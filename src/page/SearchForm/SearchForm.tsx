@@ -64,7 +64,8 @@ export const SearchForm = () => {
     setSearchTerm(value);
     fetchBooks();
   }
-  
+  console.log(resultTitle);
+
   
   
 
